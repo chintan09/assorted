@@ -1,0 +1,13 @@
+This is the first github project, goal is to familiarize with github workflow. 
+
+git commands: 
+
+git commit -m 'first commit'
+git remote add origin git@github.com:chintan09/assorted.git
+git push origin master
+
+
+todo: 
+draw a circle
+code for testing a mutex
+linked list, stack, queue etc.
