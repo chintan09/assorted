@@ -1,24 +1,12 @@
 /* Helper file - containing various functions */
 #include <stdio.h>
 
-int sum(int val)
-{
-	int i; 
-	int sum;
-	for (i=0; i<val; i++) {
-		sum += i; 
-	}
-
-	return sum; 
-}
-
-
 /* Psudo code to multiply two matrix */
 
 #define MAX_ROWS 2
 #define MAX_COLS 2
 
-void matrix_print(int mat[][MAX_ROWS])
+void matrix_print(int mat[][MAX_COLS])
 {
 	int i, j; 
 
@@ -63,4 +51,16 @@ void matrix_mul()
 	printf("Print C (Result) \n");
 	matrix_print(C);
 
+}
+
+/* Interview trick question on stack */
+void stackoverflow()
+{
+	int i; 
+	int a[10];
+
+	for (i=0; i<=10; i++) {
+		a[i] = i%10; 	
+		printf("%d \n", a[i]);
+	}
 }
