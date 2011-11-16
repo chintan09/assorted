@@ -53,6 +53,7 @@ void matrix_mul()
 
 }
 
+#ifdef INTERVIEW_CODE
 /* Interview trick question on stack */
 void stackoverflow()
 {
@@ -64,3 +65,24 @@ void stackoverflow()
 		printf("%d \n", a[i]);
 	}
 }
+
+/* Multithreaded question */
+void bar (void)
+{
+	int *m;
+	m = calloc(sizeof(int));
+	if (fork())
+	{
+		while (*m == 0); *m = 0;
+		printf("a");
+	}
+	else
+	{
+		*m = 1; while (*m);
+		printf("b");
+	}
+	exit();
+}
+
+
+#endif 
