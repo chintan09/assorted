@@ -3,8 +3,6 @@
 
 int main()
 {
-	printf("Hello World, first git code submission 10/14\n");
-	//matrix_mul();
-	stackoverflow();
+	printf("Hello World \n");
 	return 0;
 }
